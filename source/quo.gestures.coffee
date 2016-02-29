@@ -43,6 +43,7 @@ Quo.Gestures = do ($$ = Quo) ->
     _originalEvent = ev or event
     _handle "end", ev.target, _fingers
     _started = false
+    return true
 
   _cancel = (ev) ->
     _started = false
